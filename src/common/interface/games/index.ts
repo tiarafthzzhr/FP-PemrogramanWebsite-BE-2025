@@ -10,3 +10,4 @@ export * from './spin-the-wheel.interface';
 export * from './type-speed.interface';
 export * from './type-the-answer.interface';
 export * from './whack-a-mole.interface';
+export * from './win-or-lose-quiz.interface';
