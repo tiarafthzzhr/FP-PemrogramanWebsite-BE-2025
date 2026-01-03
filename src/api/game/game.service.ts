@@ -68,9 +68,9 @@ export abstract class GameService {
         },
         liked: current_user_id
           ? {
-            where: { user_id: current_user_id },
-            select: { id: true },
-          }
+              where: { user_id: current_user_id },
+              select: { id: true },
+            }
           : undefined,
         is_published: is_private,
         game_template: {
@@ -82,8 +82,8 @@ export abstract class GameService {
         creator: user_id
           ? undefined
           : {
-            select: { id: true, username: true },
-          },
+              select: { id: true, username: true },
+            },
       },
       orderBy: [
         { name: query.orderByName },
